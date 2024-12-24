@@ -4,6 +4,10 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 
+import warnings
+warnings.filterwarnings('ignore')
+
+
 # Load the trained model, scaler, and label encoders
 model = pickle.load(open("model.pkl", "rb"))  # Update with your model file path
 scaler = pickle.load(open("scaler.pkl", "rb"))  # Update with your scaler file path
